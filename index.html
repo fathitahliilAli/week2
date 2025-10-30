@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Hami <span>MiniMarket</span></h1>
+        <i class="fa-solid fa-cart-shopping"><span class="cart-count">0</span></i>
+    </header>
+
+    <!-- hero section  -->
+    <section class="filters">
+         
+        <input type="text" id="searchInput" name="text" placeholder="Search Product...">
+     <select  id="category">
+        <option value="All">All categoty</option>
+        <option value="vegetable">vegetables</option>
+        <option value="fruits">fruits</option>
+     </select>
+     <input type="number" id="price" placeholder="max price" min="=0">
+    </section>
+
+    <!-- products  -->
+     <section class="products" id="product-list">    
+     </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
