@@ -17,7 +17,7 @@ const priceSelector = document.getElementById("price");
 
 let count = 0;
 
-// ✅ Function to display items
+
 function filterItem(item) {
   productlist.innerHTML = "";
   if (item.length === 0) {
@@ -51,10 +51,9 @@ function filterItem(item) {
   });
 }
 
-// Show all products initially
 filterItem(products);
 
-// ✅ Universal filter function (used by all three inputs)
+
 function applyFilters() {
   const searchValue = searchInput.value.toLowerCase();
   const categoryValue = categorySelector.value;
@@ -75,7 +74,7 @@ function applyFilters() {
   filterItem(filtered);
 }
 
-// ✅ Listen to all filters
+
 searchInput.addEventListener("input", applyFilters);
 categorySelector.addEventListener("change", applyFilters);
 priceSelector.addEventListener("input", applyFilters);
